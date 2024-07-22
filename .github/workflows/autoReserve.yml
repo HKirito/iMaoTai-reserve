@@ -10,8 +10,8 @@ on:
       - '.github/workflows/**'
   schedule:
     - cron: '1 0 * * *'
-    - cron: '2 0 * * *'
     - cron: '3 0 * * *'
+    - cron: '30 0 * * *'
 
 
 env:
