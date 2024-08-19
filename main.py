@@ -68,7 +68,7 @@ for section in configs.sections():
             shop_info = source_data.get(str(max_shop_id))
             title = config.ITEM_MAP.get(item)
             shopInfo = f'商品:{title};门店:{shop_info["name"]}'
-            logging.info(shopInfo)
+            # logging.info(shopInfo)
             reservation_params = process.act_params(max_shop_id, item)
             # 核心预约步骤
             r_success, r_content = process.reservation(reservation_params, mobile)
